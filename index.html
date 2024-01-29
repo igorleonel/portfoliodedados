@@ -143,10 +143,19 @@
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
 
                 <form method="post" action="envia.php">
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:">
-                    <input type="text" name="email" id="email" placeholder="Seu email:">
-                    <input type="text" name="telefone" id="telefone" placeholder="Seu celular:">
-                    <textarea name="mensagem" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="input-single">
+                        <input class="input" type="text" id="nome" name = "nome" required autocomplete="off" placeholder="Seu nome completo:">
+                    </div>
+                    <div class="input-single">
+                        <input class="input" type="text" id="email" name = "email" required autocomplete="off" placeholder="Seu email:">
+                    </div>
+                    <div class="input-single">
+                        <input class="input" type="text" id="telefone" name = "telefone" required autocomplete="off" placeholder="Seu celular:">
+                    </div>
+                    <div class="input-single">
+                        <textarea class="input" id="mensagem" name="mensagem" required autocomplete="off" placeholder="Sua mensagem:"></textarea>
+                    </div>
+                    
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
             </div><!--interface-->
