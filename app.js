@@ -73,6 +73,8 @@ class FormSubmit {
     
     validateForm() {
         const fields = this.form.querySelectorAll("[name]");
+        let formIsValid = true;
+    
         for (const field of fields) {
             const value = field.value.trim();
     
@@ -80,7 +82,7 @@ class FormSubmit {
             if (!value && field.type !== "hidden" && !field.disabled) {
                 // Exibir mensagem de erro ao usuário, se desejar
                 console.error("Campo obrigatório não preenchido:", field.name);
-                return false;
+                formIsValid = false;
             }
         }
         
@@ -88,10 +90,10 @@ class FormSubmit {
         const textarea = this.form.querySelector("textarea");
         if (!textarea.value.trim()) {
             console.error("Campo obrigatório não preenchido:", textarea.name);
-            return false;
+            formIsValid = false;
         }
     
-        return true;
+        return formIsValid;
     }
 
     init() {
