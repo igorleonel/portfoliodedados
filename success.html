@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso</title>
+    <style>
+        body {
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff; /* Cor padrão do texto */
+        }
+
+        .success-message {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: #ffffff; /* Cor branca para "Mensagem" */
+            margin: 0;
+        }
+
+        span {
+            color: #E8FA8C; /* Cor #E8FA8C para "enviada" */
+        }
+
+        p {
+            color: #E8FA8C; /* Cor #E8FA8C para "contato." */
+            margin: 0;
+        }
+
+        .return-message {
+            font-size: 16px;
+            margin-top: 200px;
+        }
+
+        .dots-animation::after {
+            content: "";
+            display: inline-block;
+            animation: dots 2s infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% {
+                content: ".";
+            }
+            40% {
+                content: "..";
+            }
+            60% {
+                content: "...";
+            }
+            80%, 100% {
+                content: "";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-message">
+        <h1>MENSAGEM <span>ENVIADA!</span></h1>
+        <p>OBRIGADO POR ENTRAR EM <span>CONTATO.</span></p>
+    </div>
+
+    <div class="return-message">
+        VOLTANDO PARA A PÁGINA PRINCIPAL<span class="dots-animation"></span>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "http://127.0.0.1:5500/";
+        }, 4000);
+    </script>
+</body>
+</html>

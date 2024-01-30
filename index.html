@@ -13,6 +13,7 @@
     <!-- FIM BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <title>Portfólio de projetos</title>
 </head>
 <body>
@@ -64,7 +65,7 @@
                     </div><!--img-topo-site-->
                 </div><!--flex-->
             </div><!--interface-->
-        </section><!--topo-do-site-->>
+        </section><!--topo-do-site-->
 
         <section class="especialidades">
             <div class="interface">
@@ -114,7 +115,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt provident laborum, in repellat exercitationem consectetur. Exercitationem explicabo reprehenderit nisi at similique repudiandae unde cumque quaerat, quasi consequuntur sed! Praesentium, provident?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, similique sunt quasi laudantium praesentium expedita, voluptatum dicta inventore adipisci velit, deleniti quisquam id earum odio reprehenderit aspernatur in! Similique, fuga.</p>
                         <div class="btn-social">
-                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://www.linkedin.com/in/igorleonel/"><button><i class="bi bi-linkedin"></i></button></a>
                         </div>
                     </div><!-- txt-sobre -->
                 </div>
@@ -142,23 +143,16 @@
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
 
-                <form action="https://formsubmit.co/igorleonelborba@hotmail.com" method="post" action="envia.php">
-                    <div class="input-single">
-                        <input type="text" name = "nome" required autocomplete="off" placeholder="Seu nome completo:">
-                    </div>
-                    <div class="input-single">
-                        <input type="text" name = "email" required autocomplete="off" placeholder="Seu email:">
-                    </div>
-                    <div class="input-single">
-                        <input type="text" name = "telefone" required autocomplete="off" placeholder="Seu celular:">
-                    </div>
-                    <div class="input-single">
-                        <textarea class="input" id="mensagem" name="mensagem" required autocomplete="off" placeholder="Sua mensagem:"></textarea>
-                    </div>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                    <input type="hidden" name="_subject" value="Novo Contato!">
-                    <input type="text" name="_honey" style="display: none">
+                <form action="https://formsubmit.co/igorleonelilba@gmail.com" method="POST" data-form>
+
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu email:" required>
+                    <input type="text" name="telefone" id="telefone" placeholder="Seu telefone:" required>
+                    <textarea name="message" id="message" placeholder="Sua mensagem"></textarea>
+                    <button type="submit" data-button>ENVIAR</button>
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+
                 </form>
             </div><!--interface-->
         </section><!--formulario-->

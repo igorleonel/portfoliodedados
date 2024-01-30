@@ -228,6 +228,7 @@ section.sobre .flex{
     font-size: 22px;
     cursor: pointer;
     margin-top: 15px;
+    transition: .3s;
 }
 
 /* ESTILO PORTFOLIO */
@@ -289,7 +290,6 @@ form{
     max-width: 500px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
@@ -308,20 +308,54 @@ form input, form textarea{
 
 form textarea{
     resize: none;
-    width: 500px;
+    width: 100%; /* Alterado para ocupar 100% da largura do formulário */
     height: 200px;
 }
 
-form .btn-enviar{
+form button[type="submit"] {
     margin-top: 20px;
-    text-align: center;
+    margin-left: auto; /* Adicionado para centralizar o botão */
+    margin-right: auto; /* Adicionado para centralizar o botão */
 }
 
-form .btn-enviar input{
-    width: 120px;
+form button[type="submit"] {
+    width: 150px;
+    height: 60px;
     background-color: #E8FA8C;
     color: #000;
-    font-weight: 700;
+    font-weight: 900;
     cursor: pointer;
     transition: .3s;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #E8FA8C;
+}
+
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: #E8FA8C;
+    box-shadow: 0 0 0 0.1000rem #E8FA8C;
+}
+
+/* MENSAGEM ENVIADA COM SUCESSO */
+.success {
+    color: #E8FA8C;
+}
+
+.error {
+    color: tomato;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: #555b69;
 }
