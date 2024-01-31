@@ -219,7 +219,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -358,4 +358,147 @@ textarea:focus {
 button:disabled {
     cursor: not-allowed;
     background-color: #555b69;
+}
+
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff3e;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #E8FA8C;;
+}
+
+footer .line-footer p i{
+    color: #E8FA8C;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+@media screen and (max-width: 1300px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* CABECALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex{
+        gap: 90px;
+    }
+
+
+    section.topo-do-site{
+        padding: 20px 15%;
+    }
+
+    .topo-do-site .txt-topo-site {
+        padding: 20px -20%;
+        margin-left: 10px; /* Ou o valor desejado */
+        text-align: center;
+    }
+
+    .interface .logo{
+        margin-left: 50px;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /* ESPECIALIDADE */
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    .especialidades .titulo{
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .especialidades .especialidades-box{
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    /* SOBRE */
+    sectio.sobre {
+        padding: 80px 4%;
+    }
+
+    .sobre .img-sobre img{
+        text-align: center;
+        margin-left: 180px;
+        width: 300px;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 38px;
+        margin-left: 180px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre p {
+        text-align: center;
+        margin-left: 170px;
+    }
+
+    .btn-social{
+        text-align: center;
+        margin-left: 170px;
+    }
+
+    /* PORTFOLIO */
+    .img-port {
+        text-align: center;
+    }
+
+    /* RODAPE */
+    footer .flex{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    .line-footer .btn-social{
+        text-align: center;
+        margin-left: 5px;
+    }
+
 }
