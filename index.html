@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
     <title>Portfólio de projetos</title>
 </head>
 <body>
@@ -28,15 +33,15 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#formulario">
                     <button>Contato</button>
                 </a>
             </div>
@@ -61,13 +66,13 @@
                     </div><!--tx-topo-site-->
 
                     <div class="img-topo-site">
-                        <img src="images/pessoa.png" alt="">
+                        <img src="images/Group 1.png" alt="">
                     </div><!--img-topo-site-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--topo-do-site-->
 
-        <section class="especialidades">
+        <section id ="especialidades" class="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -103,17 +108,18 @@
             </div><!--interface-->
         </section><!--especialidades-->>
 
-        <section class="sobre">
+        <section id ="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="images/foto.png" alt="">
+                        <img src="images/Frame 8.png" alt="">
                     </div><!-- img-sobre -->
 
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU IGOR LEONEL.</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt provident laborum, in repellat exercitationem consectetur. Exercitationem explicabo reprehenderit nisi at similique repudiandae unde cumque quaerat, quasi consequuntur sed! Praesentium, provident?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, similique sunt quasi laudantium praesentium expedita, voluptatum dicta inventore adipisci velit, deleniti quisquam id earum odio reprehenderit aspernatur in! Similique, fuga.</p>
+                        <p>Minha trajetória teve início como empreendedor, contribuindo para a criação de uma startup na área educacional. Em seguida, ingressei na SporeData, uma startup americana especializada em consultoria de dados para universidades, onde aprimorei minhas habilidades com a linguagem R. </p>
+                        <p>Integrei um pipeline de dados para o maior São João do mundo, envolvendo Google Forms, Google Planilhas e Power BI para gestão eficaz. Essa jornada diversificada e desafiadora me proporcionou uma visão abrangente, destacando minha capacidade de impulsionar a eficiência operacional e gerar insights estratégicos</p>
+                        <p>A experiência decisiva veio na Oi SA, onde assumi um papel essencial como analista de dados em Sistemas Operacionais. Destaco a utilização proficiente do SQL para consultas avançadas e geração de insights, importante também no ETL, Power BI e Looker Studio na criação de dashboards, métricas e KPI's, além do Python para automação e conexão com bancos de dados utilizando o StreamLit.</p>
                         <div class="btn-social">
                             <a href="https://www.linkedin.com/in/igorleonel/"><button><i class="bi bi-linkedin"></i></button></a>
                             <a href="https://medium.com/@igor__leonel"><button><i class="bi bi-medium"></i></button></a>
@@ -123,7 +129,7 @@
             </div>
         </section><!--sobre-->>
 
-        <section class="portfolio">
+        <section id ="portfolio" class="portfolio">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -140,7 +146,7 @@
             </div><!--interface-->
         </section><!--portfolio-->>
 
-        <section class="formulario">
+        <section id ="formulario" class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
 
